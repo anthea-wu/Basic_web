@@ -1,4 +1,2 @@
 Instrcution  
-**粗體**  
-*斜體*  
-底線
+![cat](image/cat.jpg)
