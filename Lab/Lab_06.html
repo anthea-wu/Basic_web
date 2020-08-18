@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>8月份產業新尖兵課表</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Serif TC', serif;
-            height: 700px;
+            height: 800px;
             display: grid;
-            grid-template-rows: 50px 50px 1fr;
+            grid-template-rows: 20px 50px 1fr 30px 20px;
             place-items: center;
         }
 
@@ -19,7 +20,7 @@
             width: 625px;
             grid-row: 2/3;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
             place-items: center;
             background-color: #696969;
             color: #E8E8E8;
@@ -79,8 +80,7 @@
 
         #time {
             grid-row: 3/4;
-            font-family: Consolas;
-            height: 600px;
+            height: 650px;
         }
 
         .python {
@@ -88,7 +88,7 @@
             color: #696969;
         }
 
-        .python:hover{
+        .python:hover {
             background-color: #696969;
             color: #F5B7B1;
         }
@@ -98,7 +98,7 @@
             color: #696969;
         }
 
-        .web:hover{
+        .web:hover {
             background-color: #696969;
             color: #A3E4D7;
         }
@@ -108,7 +108,7 @@
             color: #696969;
         }
 
-        .software:hover{
+        .software:hover {
             background-color: #696969;
             color: #F9E79F;
         }
@@ -118,7 +118,7 @@
             color: #696969;
         }
 
-        .information:hover{
+        .information:hover {
             background-color: #696969;
             color: #F5CBA7;
         }
@@ -133,23 +133,32 @@
             width: 100px;
             color: #E8E8E8;
         }
-        
+
         h1 {
             background-color: #696969;
             color: #E8E8E8;
         }
 
+        .footer {
+            height: 30px;
+            width: 625px;
+            grid-row: 4/5;
+            display: grid;
+            place-items: center;
+            background-color: #696969;
+            color: #E8E8E8;
+        }
     </style>
 </head>
 
 <body>
 
-        <div class="browse">
-            <div class="search">課程查詢</div>
-            <div class="select">選課系統</div>
-            <div class="view">課表預覽</div>
-            <div class="info">資料修改</div>
-        </div>
+    <div class="browse">
+        <div class="search">課程查詢</div>
+        <div class="select">選課系統</div>
+        <div class="view">課表預覽</div>
+        <div class="info">資料修改</div>
+    </div>
 
     <div id="time">
         <table align="center">
@@ -221,7 +230,11 @@
                 </tr>
             </tbody>
         </table>
-    
+
+    </div>
+
+    <div class="footer">
+        Lab練習：grid和flex排版
     </div>
 
 </body>
