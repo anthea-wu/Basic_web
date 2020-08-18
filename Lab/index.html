@@ -44,7 +44,7 @@
 
         .outlink {
             grid-template-columns: 1fr 30px;
-            grid-template-rows: 1fr;
+            grid-template-rows: 1fr; /* 給他一個有指定的grid */
             display: grid;
             place-items: center;
             font-size: 1.15rem;
@@ -110,17 +110,19 @@
             grid-column: 1/2;
         }
 
-        .href:hover {
-            background-color: #141414;
-            color: #e3e3e3;
-        }
-
         a:hover {
             color: #e3e3e3;
         }
 
         a {
             color: #141414;
+            text-decoration: none;
+        }
+
+        
+        .href:hover {
+            background-color: #141414;
+            color: #e3e3e3;
         }
     </style>
 </head>
@@ -143,11 +145,11 @@
             <tbody align="center">
                 <tr>
                     <td class="name">產業新尖兵試辦計畫網</td>
-                    <td><a href="https://elite.taiwanjobs.gov.tw/" , target="_block">點我前往</a></td>
+                    <td class="href"><a href="https://elite.taiwanjobs.gov.tw/" , target="_block">點我前往</a></td>
                 </tr>
                 <tr>
                     <td class="name">逢甲大學推廣教育處</td>
-                    <td><a href="http://www.extension.fcu.edu.tw/wSite/mp?mp=241101" , target="_block">點我前往</a></td>
+                    <td class="href"><a href="http://www.extension.fcu.edu.tw/wSite/mp?mp=241101" , target="_block">點我前往</a></td>
                 </tr>
 
             </tbody>
